@@ -1,0 +1,4 @@
+Flask==2.2.2
+opencv-python-headless==4.8.0.74
+imutils==0.5.4
+flask_cors==4.0.0
