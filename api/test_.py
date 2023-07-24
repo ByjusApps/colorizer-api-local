@@ -9,7 +9,7 @@ DIRPATH = f".tests_data"
 
 
 def _test_colorize(file_number):
-    path = f"{DIRPATH}/colorize/1_input/{file_number}.jpg"
+    path = f"{DIRPATH}/colorize/{file_number}.jpg"
     img = colorize(cv2.imread(path))
     plt.title(f"{path}")
     plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
@@ -17,7 +17,7 @@ def _test_colorize(file_number):
 
 
 def _test_transfer_style(file_number, style):
-    path = f"{DIRPATH}/style_transfer/1_input/{file_number}.jpg"
+    path = f"{DIRPATH}/style_transfer/{file_number}.jpg"
     img = transfer_style(cv2.imread(path), style)
     plt.title(f"{path} - {style}")
     plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB) / 255.0)
